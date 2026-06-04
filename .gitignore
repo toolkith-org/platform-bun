@@ -1,0 +1,60 @@
+# production
+node_modules/
+build/
+dist/
+
+# testing
+/coverage
+/out/
+
+# misc
+.DS_Store
+*.pem
+
+# Logs
+logs
+*.log
+
+# IDEs and editors
+.idea
+.project
+*.launch
+.settings/
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.gemini/
+.claude/
+
+# env files (can opt-in for committing if needed)
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# temp directory
+.tmp
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+/*.jpg
+/*.png
+/*.sql
+/*.txt
+/*.md
+!README.md
+!CHANGELOG.md

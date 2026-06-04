@@ -1,0 +1,3 @@
+[test]
+# Bun's test runner picks up *.test.ts under ./test by default.
+root = "./test"

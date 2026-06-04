@@ -1,0 +1,42 @@
+{
+  "name": "@toolkith/platform-bun",
+  "version": "0.1.0",
+  "description": "Nest - @platform-bun",
+  "author": "Oleh Tsyba",
+  "license": "MIT",
+  "homepage": "https://github.com/toolkith-org/platform-bun",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toolkith/platform-bun.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "bun run clean && tsc -p tsconfig.json",
+    "test": "bun test",
+    "prepublishOnly": "bun run build"
+  },
+  "dependencies": {
+    "path-to-regexp": "8.4.2",
+    "tslib": "2.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@types/bun": "1.3.14",
+    "typescript": "^5.9.0"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0"
+  }
+}
